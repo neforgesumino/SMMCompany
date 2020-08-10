@@ -55,7 +55,7 @@ header {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5)
 
 }
-/* 
+
 .menu-nav {
     position: fixed;
     top: 0;
@@ -68,10 +68,9 @@ header {
     justify-content: space-evenly;
     align-items: center;
     transition: transform 0.3s ease-in-out; 
+    transform: translate(110%);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
-*/
-
+} 
 
 .spread {
     transform: translate(0);
@@ -257,7 +256,8 @@ footer {
 
 .brand+p {
     font-size: 500;
-    margin-left: 20px;
+    margin-left: 22px;
+    padding-top: 2px;
 }
 
 .social-media {
@@ -269,8 +269,6 @@ footer {
     bottom: 70px;
     right: 20px;
 }
-
-
 
 .social-media-icon {
     display: inline-block;
@@ -365,3 +363,11 @@ footer {
         width: 95%;
     }
 }
+
+/* hamburger.addEventListener('click', ()=>{
+    menu.classList.toggle("spread")
+ })
+ 
+ window.addEventListener('click', e=>{
+     console.log(e.target)
+ }) */
