@@ -24,6 +24,7 @@ body {
 /* HERO */
 
 header {
+    text-align: center;
     height: 100vh;
     background-image: linear-gradient(to right, rgba(238, 162, 162, 0.5) 0%, rgba(187, 193, 191, 0.5) 19%, rgba(87, 197, 225, 0.5) 42%, rgba(180, 159, 218, 0.5) 79%, rgba(122, 197, 216, 0.5) 100%), url(/media/hero3.jpg);
     background-repeat: no-repeat;
@@ -152,6 +153,7 @@ header {
 }
 
 .img-gallery {
+    object-fit: contain;
     width: 30%;
     display: block;
     margin-bottom: 15px;
@@ -178,6 +180,7 @@ header {
 }
 
 .add-image {
+    object-fit: contain;
     width: 60%;
     border-radius: 10px;
     transform: scale(0);
@@ -228,7 +231,7 @@ header {
 
 footer {
     background: #C5C1FF;
-    padding-bottom: 0.1px;
+    padding-bottom: 0.1px; 
 }
 
 .footer-content {
@@ -248,17 +251,26 @@ footer {
 .brand {
     font-weight: 500;
     font-size: 40px;
+    margin-left: 20px;
+    padding-top: 30px;
 }
 
 .brand+p {
     font-size: 500;
+    margin-left: 20px;
 }
 
 .social-media {
     width: 50%;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    float: right; 
+    position: relative;
+    bottom: 70px;
+    right: 20px;
 }
+
+
 
 .social-media-icon {
     display: inline-block;
@@ -269,4 +281,87 @@ footer {
     border-radius: 50%;
     text-align: center;
     color: #fff;
+}
+
+.social-media-icon:hover {
+    background: #fff;
+    color: #764ba2;
+
+}
+
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+    
+}
+
+.line {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px) {
+    .menu-nav {
+        width: 50vw;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .services-container img {
+        width: 80px;
+        margin-bottom: 40px;
+    }
+
+    .checklist-services {
+        width: 80%;
+    }
+
+    .service {
+        margin-bottom: 30;
+    }
+
+    .add-image {
+        width: 80%;
+    }
+
+    .img-gallery {
+        width: 45%;
+    }
+
+    .expertise-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .menu-nav {
+        width: 65vw;
+    }
+
+    .hamburger {
+        top: 20px;
+        right: 20px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size:  30px;
+    }
+
+    .img-gallery {
+        width: 95%;
+    }
+
+    .add-image {
+        width: 95%;
+    }
 }
