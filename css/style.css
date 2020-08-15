@@ -152,7 +152,7 @@ header {
 }
 
 .img-gallery {
-    object-fit: contain;
+    object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
