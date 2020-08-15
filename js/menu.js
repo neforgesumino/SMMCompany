@@ -1,9 +1,8 @@
 const hamburger = document.querySelector('.hamburger')
 const menu = document.querySelector('.menu-nav')
 
-console.log(menu)
-console.log(hamburger)
-
+// console.log(menu)
+/// console.log(hamburger)
 
 hamburger.addEventListener('click', ()=>{
     menu.classList.toggle("spread")
